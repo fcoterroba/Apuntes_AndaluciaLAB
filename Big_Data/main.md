@@ -62,3 +62,7 @@ Fue finalmente comprado por HP en 2019.
 Hadoop divide ficheros en trozos de **64MB** y los reparte por todo el cluster HDFS.
 
 Vamos a fijarnos en el CSV de [crímenes de Chicago desde el 2001](https://catalog.data.gov/dataset/crimes-2001-to-present-398a4). 
+
+La relación jerárquica entre Hive y Hadoop es la siguiente:
+
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Relacion_Hive_Hadoop.png)
