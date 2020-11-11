@@ -57,5 +57,8 @@ MapR es la distribución usada por Google Cloud Platform para ofrecer servicios 
 
 Fue finalmente comprado por HP en 2019.
 
-## Hive
-Vamos a realizar un ejercicio con el CSV de [crímenes de Chicago desde el 2001](https://catalog.data.gov/dataset/crimes-2001-to-present-398a4). 
+---
+
+Hadoop divide ficheros en trozos de **64MB** y los reparte por todo el cluster HDFS.
+
+Vamos a fijarnos en el CSV de [crímenes de Chicago desde el 2001](https://catalog.data.gov/dataset/crimes-2001-to-present-398a4). 
