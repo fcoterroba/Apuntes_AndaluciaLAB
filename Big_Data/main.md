@@ -23,3 +23,39 @@ Para añadir datos al storage usamos el explorador de storage y agregamos nuevos
 ![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Azure_Storage_1.png)
 
 La alternativa, si no, es el [Explorador de Azure Storage](https://azure.microsoft.com/es-es/features/storage-explorer/)
+# 11/11/2020
+## Distribuciones Hadoop
+Una distribución de Hadoop es, a fin de cuentas, un conjunto de herramientas basadas en Apache Hadoop.
+
+Sigue la filosofía de las distribuciones Linux.
+
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Hadoop_1.png)
+### Hortonworks
+Hortonworks nace en el 2011 con una aportación capital de Yahoo! y es patrocinador de Apache Software Foundation.
+
+En 2018 fue comprada por Cloudera aunque esta empresa sigue manteniendo dicha distribución.
+
+Es la distribución usada por Azure e IBM.
+
+Su producto estrella es **HDP** (Hortonworks Data Platform) de software libre y que incluye el famoso programa de administración Ambari.
+### MapR
+MapR nace en 2009 con fondos de Google o Lightspeed.
+
+Tiene su propio motor de HDFS llamado **MapR Filesystem**. 
+
+Mientras que Cloudera y Hortonworks basan su protección en herramientas de encriptación, **MapR** lo basa en su sistema de ficheros propios.
+
+MapR ofrece **mejor rendimiento** que Cloudera o Hortonworks
+
+#### Ventajas
+  - Está desarrollado en C pero es compatible a nivel de API con HDFS, desarrollado en Java. (guardando las distancias)
+  - Soporta accesos aleatorios de escritura
+  - Puede ser visualizado externamente como unidad NFS
+  - Se pueden hacer snapshots.
+
+MapR es la distribución usada por Google Cloud Platform para ofrecer servicios de Hadoop.
+
+Fue finalmente comprado por HP en 2019.
+
+## Hive
+Vamos a realizar un ejercicio con el CSV de [crímenes de Chicago desde el 2001](https://catalog.data.gov/dataset/crimes-2001-to-present-398a4). 
