@@ -66,3 +66,26 @@ Vamos a fijarnos en el CSV de [crímenes de Chicago desde el 2001](https://catal
 La relación jerárquica entre Hive y Hadoop es la siguiente:
 
 ![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Relacion_Hive_Hadoop.png)
+# 12/11/2020
+## HBase
+
+HBase se monta de manera similar a Hadoop en Azure.
+### NoSQL
+
+NoSQL puede seguir o no el modelo relacional, seguir o no el paradigma ACID y tener o no estructuras como tablas.
+
+NoSQL se almacena en información con forma de árbol. Clave-Valor
+
+Un JSON o XML por ejemplo, sería una base de datos NoSQL.
+
+Las bases de datos NoSQL no diferencian por el tipo de valor que se almacena.
+
+Algunos ejemplos de bases de datos NoSQL son:
+  - MongoDB
+  - Redis
+  - CouchDB
+  - Voldemort
+  - Cassandra
+  - HBase
+  - FireBase
+  - ...
