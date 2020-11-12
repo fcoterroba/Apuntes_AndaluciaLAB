@@ -70,6 +70,21 @@ La relación jerárquica entre Hive y Hadoop es la siguiente:
 ## HBase
 
 HBase se monta de manera similar a Hadoop en Azure.
+
+Para acceder a HBase existe una shell para lanzar comandos. Para ello tenemos que usar `hbase shell`
+
+Podemos comprobar el estado del servidor usando `status`
+
+Hacemos un ejemplo para probar los conocimientos y creamos dos tablas. El comando para crear tablas es `create 'nombre de la tabla'`
+
+Con `list` podemos ver un listado de las tablas y con `exists 'nombre de la tabla'` podemos comprobar si una tabla existe o no.
+
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Comandos_HBase.png)
+
+Podemos borrar la tabla con `drop 'nombre de la tabla'`
+
+Podemos insertar datos usando el comando `put 'nombre de la tabla, 'índice donde acceder', 'nombre de la columna: nombre', 'Valor'` | **Ejemplo**: `put 'prueba', '1', 'personal_data: name', 'Fran'`t
+
 ### NoSQL
 
 NoSQL puede seguir o no el modelo relacional, seguir o no el paradigma ACID y tener o no estructuras como tablas.
@@ -89,3 +104,9 @@ Algunos ejemplos de bases de datos NoSQL son:
   - HBase
   - FireBase
   - ...
+ 
+ ## Cosmos DB
+ 
+Es una base de datos NoSQL distribuida por todas las zonas de los datacenters de Microsoft.
+
+Para crearlo en Azure hemos usado un núcleo de SQL y tarda un cuarto de hora en implementarse, más o menos.
