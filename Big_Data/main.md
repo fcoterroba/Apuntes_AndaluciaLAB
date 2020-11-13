@@ -110,3 +110,23 @@ Algunos ejemplos de bases de datos NoSQL son:
 Es una base de datos NoSQL distribuida por todas las zonas de los datacenters de Microsoft.
 
 Para crearlo en Azure hemos usado un núcleo de SQL y tarda un cuarto de hora en implementarse, más o menos.
+
+El container es la equivalencia a la tabla.
+
+Para empezar vamos a explorador de datos, creamos una nueva base de datos y posteriormente un container, configurando correctamente las opciones.
+
+Para añadir información tenemos que hacerlo en modo JSON.
+
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Insertar_CosmosDB.png)
+
+Las consultas en CosmoDB son muy similares a SQL, simplemente usamos c para definirnos a una tabla y **SIEMPRE** nos vamos a definir a ella así.
+
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Consultas_CosmosDB.png)
+
+## Spark
+
+Spark nace en 2009.
+
+Vamos a levantar un HDInsight sobre Spark.
+
+Para usar la terminal de Spark usaremos el comando `spark-shell`
