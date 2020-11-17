@@ -130,3 +130,34 @@ Spark nace en 2009.
 Vamos a levantar un HDInsight sobre Spark.
 
 Para usar la terminal de Spark usaremos el comando `spark-shell`
+# 17/11/2020
+## Azure Functions
+Hoy vamos a realizar funciones en Azure usando el SDK de .NET y el lenguaje de programación **C#**.
+
+El ejercicio y ejemplos realizados se pueden consultar [pinchando aquí](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/tree/main/Big_Data/Azure_Functions)
+
+Si quiero pasar un JSON a C#, existe una librería llamada `newtonsoft.json`
+
+Hay dos formas de crear JSON. La primera de ellas es generar una clase y luego crear un objeto serializado de JSON. **Ejemplo**:
+```cs
+public class datos {
+  public string name {get; set;}
+  public string surname {get; set;}
+}
+...
+datos misdatos = new datos();
+misdatos.name = name;
+misdatos.surname = surname;
+string json = JsonConvert.SerializeObject(misdatos);
+```
+La otra manera es algo más sencilla y rápida. En la misma línea se puede crear y luego serializar en JSON.
+```cs
+var misotrosdatos = new {name= "Jose", surname = "Jimenez"};
+string json2 = JsonConvert.SerializeObject(misotrosdatos);
+```
+### Ejemplo Twitter
+Vamos a empezar a hacer un pequeño proyecto de Twitter en el que vamos a 
+
+Un tweet, por detrás es un JSON que contiene fecha, contenido, número de retweets, de likes, etcétera.
+
+El primer paso para empezar a usar funciones de Twitter, es registrarse en el [Twitter Developer](https://developer.twitter.com/en)
