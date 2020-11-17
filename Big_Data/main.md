@@ -156,8 +156,8 @@ var misotrosdatos = new {name= "Jose", surname = "Jimenez"};
 string json2 = JsonConvert.SerializeObject(misotrosdatos);
 ```
 ### Ejemplo Twitter
-Vamos a empezar a hacer un pequeño proyecto de Twitter en el que vamos a 
-
 Un tweet, por detrás es un JSON que contiene fecha, contenido, número de retweets, de likes, etcétera.
 
 El primer paso para empezar a usar funciones de Twitter, es registrarse en el [Twitter Developer](https://developer.twitter.com/en)
+
+A continuación, vamos a descargar el proyecto sampleado de Twitter Client Core, disponible en el [repositorio de Azure en GitHub](https://github.com/Azure/azure-stream-analytics/tree/master/DataGenerators/TwitterClientCore) y empezaremos a programar en base al programa, escrito en C#.
