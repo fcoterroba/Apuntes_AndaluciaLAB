@@ -161,3 +161,6 @@ Un tweet, por detrás es un JSON que contiene fecha, contenido, número de retwe
 El primer paso para empezar a usar funciones de Twitter, es registrarse en el [Twitter Developer](https://developer.twitter.com/en)
 
 A continuación, vamos a descargar el proyecto sampleado de Twitter Client Core, disponible en el [repositorio de Azure en GitHub](https://github.com/Azure/azure-stream-analytics/tree/master/DataGenerators/TwitterClientCore) y empezaremos a programar en base al programa, escrito en C#.
+# 18/11/2020
+## Twitter Client Core
+Vamos a trabajar con la carpeta de [TwitterClientCore](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/tree/main/Big_Data/TwitterClientCore)
