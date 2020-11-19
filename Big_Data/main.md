@@ -160,7 +160,26 @@ Un tweet, por detrás es un JSON que contiene fecha, contenido, número de retwe
 
 El primer paso para empezar a usar funciones de Twitter, es registrarse en el [Twitter Developer](https://developer.twitter.com/en)
 
-A continuación, vamos a descargar el proyecto sampleado de Twitter Client Core, disponible en el [repositorio de Azure en GitHub](https://github.com/Azure/azure-stream-analytics/tree/master/DataGenerators/TwitterClientCore) y empezaremos a programar en base al programa, escrito en C#.
+A continuación, vamos a descargar el proyecto sampleado de Twitter Client Core, disponible en el [repositorio de Azure en GitHub](https://github.com/Azure/azure-stream-analytics/tree/master/DataGenerators/TwitterClientCore) y empezaremos a programar en base al programa, escrito en C#
 # 18/11/2020
 ## Twitter Client Core
 Vamos a trabajar con la carpeta de [TwitterClientCore](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/tree/main/Big_Data/TwitterClientCore)
+# 19/11/2020
+## APIs
+En esta sesión vamos a utilizar las Azure Functions como APIs y crear una funcionalidad completa.
+Vamos a generar el API de la aplicación móvil de un hotel para la gestión del desayuno, consumo de productos, reserva de servicios, etcétera.
+Lo que vamos a acabar haciendo es:
+  - Crear una base de datos SQL Server
+  - Crear un contenedor de funciones
+  - Reservas de servicios
+
+Vamos a crear una instancia accesible desde el exterior poniendo un punto de conexión público en el método de conectividad y permitiendo las dos opciones de las reglas del firewall.
+Nos vamos a conectar posteriormente usando SQL Server Management Studio
+Es necesario habilitar la encriptación (que por defecto está habilitada)
+Una instancia SQL no puede ser upgradeada a una SQL managed
+### Pasos
+  1. Crear una tabla con los campos necesarios
+
+![texto alternativo](tabla-1.png)
+  
+  2. Crear una función `getToken` que pasa la habitación y el apellido y devuelve un código alfanumérico aleatorio 
