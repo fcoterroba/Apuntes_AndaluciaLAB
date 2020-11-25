@@ -184,4 +184,22 @@ Una instancia SQL no puede ser upgradeada a una SQL managed
   
   2. Crear una función `getToken` que pasa la habitación y el apellido y devuelve un código alfanumérico aleatorio 
   3. Haz una API para que un huesped pueda reservar una hora en el desayuno (pasa el token como parametro para saber que es él)
-  4. fjdaskdjfakfsd
+
+# 25/11/2020
+Vamos a crear un área de trabajo de Machine Learning Studio (classic)
+Esto necesita una cuenta de almacenamiento o blob storage
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Creacion_MachineLearning.png) 
+Cuando la hayamos creado, vamos a empezar a realizar experimentos en [esta web de Azure](https://studio.azureml.net/)
+Dicho proyecto de Machine Learning se conecta a un storage
+Vamos a crear un **experimiento en blanco**
+Simplemente tenemos que arrastrar y soltar:
+  1. Añadimos primeramente el dataset que acabamos de subir
+  2. Machine Learning > Initialize Model > Classification > Two-Class Boosted Decision
+  3. Split Data
+  4. Train Model
+  5. El valor requerido del train model es seleccionar la columna que quiero que me prediga
+Unimos de la siguiente forma: 
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Big_Data/Planteamiento_MachineLearning.png) 
+Con el score model podemos comprobar el porcentaje de acierto
+Tenemos que hacer play una primera vez para comprobar el funcionamiento.
+Posteriormente podemos montar una web service automática
