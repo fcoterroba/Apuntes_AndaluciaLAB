@@ -183,3 +183,5 @@ Una instancia SQL no puede ser upgradeada a una SQL managed
 ![texto alternativo](tabla-1.png)
   
   2. Crear una función `getToken` que pasa la habitación y el apellido y devuelve un código alfanumérico aleatorio 
+  3. Haz una API para que un huesped pueda reservar una hora en el desayuno (pasa el token como parametro para saber que es él)
+  4. fjdaskdjfakfsd
