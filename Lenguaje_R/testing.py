@@ -11,3 +11,10 @@ def myfunction():
 
 # Function's call
 myfunction()
+
+# Function with optional parameters
+def optional(hola="Te saluda Fran"):
+	return print(hola)
+
+optional(hola="Te saluda otra persona")
+
