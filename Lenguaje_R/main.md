@@ -70,3 +70,18 @@ Con el comando `lines` podemos mostrar un gráfico encima del ya existente.
 Con el comando `decompose()`, lo primero que se busca es una estacionalidad de la serie y a partir de ese dato, se calcula el resto.
 
 Para hacer la estacionalidad a días, se usa `stl()` con el parámetro, `s.window=7`
+# 01/12/2020
+## Git - Control de versiones
+Git es un sistema de control de versiones. Sus partes son:
+
+    - Repositorio → Lugar en el que se almacenan los datos actualizados e histórico de cambios
+    - Revisión → Versión determinada de la información que se gestiona.
+    - Tag → Los tags permiten identificar revisiones importantes en el proyecto
+    - Branch → Conjunto de archivos que ha sido ramificado o bifurcado. En ese momento, existen dos copias de dichos archivos que serán desarrolladas y modificadas de fomra independiente.
+
+## Python
+Vamos a empezar a realizar pruebas en Python.
+
+Vamos a crear un archivo de pruebas con extensión py.
+
+Para crear un archivo en la terminal de Linux se puede usar: `nano testing.py`
