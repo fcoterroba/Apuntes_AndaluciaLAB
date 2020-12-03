@@ -85,3 +85,30 @@ Vamos a empezar a realizar pruebas en Python.
 Vamos a crear un archivo de pruebas con extensión py.
 
 Para crear un archivo en la terminal de Linux se puede usar: `nano testing.py`
+
+# 03/12/2020
+Un factor que representa a un vector que define una clasificación discreta de los elementos de otro vector
+
+En R existen
+    - Los factores nominales se basan en una ordenación natural de los niveles y se crean con `factor()`
+    - Los factores ordinales tienen un orden concreto partiendo de la función `ordered()`
+
+**Vamos a hacer una serie de ejercicios del [PDF](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/Introduccion_A_R.png) desde la página 24 hasta la 28**
+
+Se puede ver el script de ejemplo en R [pinchando aquí](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/ejercicio1.R)
+
+Posteriormente, similar al ejercicio anterior realizamos una variante, indicando únicamente **Madrid** y **Sevilla**. [Script en R](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/ejercicio1_1.R)
+
+## Variables indexadas (matrices)
+Una variable indexada (array o matriz) es una colección de datos indexados por varios índices. **EJEMPLO**
+
+```R
+mismonombre = c(1:40); dim(mismonombre) <- c(10,2,2); mismonombre
+```
+
+Otro ejemplo:
+```R
+h = (1:50)
+z <- array(h, dim=c(3,4,2)) # 3 FILAS, 4 COLUMNAS Y 2 CONJUNTOS
+```
+☝ puede tener menos valores de los escritos pero NUNCA puede tener de más.
