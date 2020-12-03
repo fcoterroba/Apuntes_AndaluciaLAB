@@ -112,3 +112,50 @@ h = (1:50)
 z <- array(h, dim=c(3,4,2)) # 3 FILAS, 4 COLUMNAS Y 2 CONJUNTOS
 ```
 ☝ puede tener menos valores de los escritos pero NUNCA puede tener de más.
+
+## Batería de ejercicios
+### Ejercicio 1 |  Crear una función para verificar si un numero es par o impar
+```R
+x <- 458923
+if(x%%2 == 0){
+  print("Es par")
+}else{
+  print("Es impar")
+}
+```
+
+### Ejercicio 2 | Verifica si el valor de una variable es un numero o un carácter
+```R
+variable <- 565
+if(is.numeric(variable)){
+  print("Es un número")
+}else if(is.character(variable)){
+  print("Es un carácter")
+}else{
+  print("No es ni un número ni un carácter")
+}
+```
+
+### Ejercicio 3 | Dado un vector con 3 valores numericos, calcular cual es el valor máximo, utilizando if, else
+```R
+vector <- c(18,10,30)
+maximo <- 0
+if( (vector[1] > vector[2]) & (vector[1] > vector[3]) ){
+  maximo <- vector[1]
+}else if (vector[2] > vector[3]){
+  maximo <- vector[2]
+}else{
+  maximo <- vector[3]
+}
+print(maximo)
+```
+
+<!-- TODO: Añadir ejercicios 4 y 5 (están en el repo del profe) -->
+<!--# Ejercicio 4 # Crear una función que calcule la media de dos números pasados como parámetros # Ejercicio 5 # Crear una función que sume todos los elementos de una matriz -->
+
+## Funciones gráficas
+Las instrucciones gráficas se dividen en 3 categorías:
+
+  - Alto nivel → Funciones que crean un nuevo gráfico con ejes, etiquetas y títulos
+  - Bajo nivel → Añade información a un gráfico existente como puntos adicionales, líneas, etiquetas, etc.
+  - Interactivas → Funciones que permiten interactuar con un gráficom, añadiendo o eliminadno información usando el ratón o el teclado
