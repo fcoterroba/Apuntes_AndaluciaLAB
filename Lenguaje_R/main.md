@@ -151,7 +151,7 @@ print(maximo)
 ```
 
 <!-- TODO: Añadir ejercicios 4 y 5 (están en el repo del profe) -->
-<!--# Ejercicio 4 # Crear una función que calcule la media de dos números pasados como parámetros # Ejercicio 5 # Crear una función que sume todos los elementos de una matriz -->
+<!--# Ejercicio 4 # Crear una función que calcule la media de dos números pasados como parámetros # Ejercicio 5 # Crear una función que sume todos los el1ementos de una matriz -->
 
 ## Funciones gráficas
 Las instrucciones gráficas se dividen en 3 categorías:
@@ -159,3 +159,42 @@ Las instrucciones gráficas se dividen en 3 categorías:
   - Alto nivel → Funciones que crean un nuevo gráfico con ejes, etiquetas y títulos
   - Bajo nivel → Añade información a un gráfico existente como puntos adicionales, líneas, etiquetas, etc.
   - Interactivas → Funciones que permiten interactuar con un gráficom, añadiendo o eliminadno información usando el ratón o el teclado
+
+# 04/12/2020
+## Prácticas con datasets
+Hoy vamos a hacer una práctica con el dataset de la [calidad del aire](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/Datasets/airquality.csv)
+
+`data(carga un dataset ya definido en R` //airquality, por ejemplo
+
+`airqualitydataset = read.csv('./Datasets/airquality.csv', header=TRUE, sep=",")` 
+
+Los nombres técncicos para filas y columnas son **observaciones** y **variables**, respectivamente.
+
+```R
+plot(airqualitydataset$Ozone)
+plot(airqualitydataset$ozone, airquality$wind)
+plot(airqualitydataset)
+```
+
+```R
+barplot(airqualitydataset$Ozone,
+     xlab = "Concrentación de Ozono en el aire",
+     ylab = "Niveles de Ozono",
+     col = "green",
+     horiz = FALSE)
+```
+
+El anterior script genera lo siguiente:
+
+![calidad del aire](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/Barplot_1.png)
+
+```R
+hist(airqualitydataset$Solar.R,
+     main = "Solar radiation values in air",
+     xlab = "Solar rad.",
+     col = "yellow")
+```
+
+El anterior script genera lo siguiente:
+
+![calidad del aire](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/Histogram_1.png)
