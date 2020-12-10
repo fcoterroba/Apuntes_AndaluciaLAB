@@ -1,20 +1,9 @@
-# Variables
-numero = 24
-cadena1 = "Hola"
-cadena2 = 'Mundo'
-booleano = True
-decimal = 3.14158594
+lista = [{'Nombre':'NUCLEO', 'Id':20, 'Tipo':'MP', 'Fuente':2},{'Nombre':'PVC de mexichem', 'Id':19, 'Tipo':'MP', 'Fuente':2}]
 
-# Functions
-def myfunction():
-	return print("Valor devuelto desde una función")
+diccionarioCopiar = [{}]
 
-# Function's call
-myfunction()
+for elem in lista:
+	for k,v in elem.items():
+		diccionarioCopiar[k] = [v]
 
-# Function with optional parameters
-def optional(hola="Te saluda Fran"):
-	return print(hola)
-
-optional(hola="Te saluda otra persona")
-
+print(diccionarioCopiar)		

@@ -198,3 +198,27 @@ hist(airqualitydataset$Solar.R,
 El anterior script genera lo siguiente:
 
 ![calidad del aire](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/Histogram_1.png)
+
+# 09/12/2020
+
+## Machine Learning con R - Parte 1
+El PDF que se sigue se puede encontrar en [este enlace](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/ML_R_Parte1.pdf) 
+
+Los tipos de ML básicos son:
+  - Aprendizaje supervisado:
+
+Son modelos que se entrenan con un conjunto de datos de ejemplo, llamados **de entrenamiento**, en los que los resultados de salida son conocidos.
+
+Hay dos aplicaciones principales de aprendizaje supervisado: **regresión** (aquellas que tienen una tendencia más o menos regular, siguiendo una especie de patrón) y **clasificación** (se agrupan las observaciones según sus características que las hacen más o menos comunes)
+
+  - Aprendizaje no supervisado:
+
+Se tratan datos sin etiquetar cuya estructura es desconocida.
+
+### La metodología del Machine Learning
+![texto alternativo](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/ML_Metodologia.png)
+
+## Regresión SVM
+Con el [siguiente script](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/pruebaregresionsvm.R) podremos obtener todo lo necesario para sacar un plot mostrando la regresión SVM de la predicción en relación al sueldo y el nivel del empleado
+
+# 10/12/2020
