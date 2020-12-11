@@ -221,4 +221,8 @@ Se tratan datos sin etiquetar cuya estructura es desconocida.
 ## Regresión SVM
 Con el [siguiente script](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blob/main/Lenguaje_R/pruebaregresionsvm.R) podremos obtener todo lo necesario para sacar un plot mostrando la regresión SVM de la predicción en relación al sueldo y el nivel del empleado
 
-# 10/12/2020
+# 11/12/2020
+## Clasificación: Árboles de decisión
+Es un método bastante antiguo que ha ido mejorando con los años. Ahora existen:
+	- Random Forest
+	- Gradient Boosting
