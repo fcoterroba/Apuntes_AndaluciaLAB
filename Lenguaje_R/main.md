@@ -226,3 +226,7 @@ Con el [siguiente script](https://github.com/fcoterroba/Apuntes_AndaluciaLAB/blo
 Es un método bastante antiguo que ha ido mejorando con los años. Ahora existen:
 	- Random Forest
 	- Gradient Boosting
+
+# 14/12/2020
+## Modelos de ML basados en clustering: k-means
+El principal problema de k-means es el hecho de seleccionar un número de clusters adecuado.
