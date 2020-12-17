@@ -55,3 +55,44 @@ siguienteSemana$DIASEM = as.factor(siguienteSemana$DIASEM)
 siguienteSemana$MES = as.factor(siguienteSemana$MES)
 predict(modeloLineal, siguienteSemana)
 ```
+
+# 17/12/2020
+## Jupyter
+Hoy vamos a estar trabajando con jupyter notebook y la librería pandas.
+
+Se instala con `pip install pandas` y se importa con `import pandas`
+
+### Importar un csv
+```bank = pd.read_csv("/path/to/file.csv", sep=";")```
+
+### Summary de R
+```bank.describe()```
+
+### Mostrar 'condiciones' en Pandas
+```bank[(bank['age'] > 40)]```
+
+### Random forest en Python usando Pandas
+```py
+train_x, test_x, train_y, test_y = train_test_split(bank[feature_cols], bank.y, test_size = 0.25, random_state = 123)
+
+train_x_dummies = pd.get_dummies(data=train_x, columns = ['job', 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'poutcome'])
+
+test_x_dummies = pd.get_dummies(data=test_x, columns = ['job', 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'poutcome'])
+
+dtc2 = tree.DecisionTreeClassifier(max_depth=2)
+
+modelBank2 = dtc2.fit(train_x_dummies, train_y)
+
+dtc2.score(train_x_dummies, train_y)
+
+dtc2.score(test_x_dummies, test_y)
+```
+
+Finalmente mostramos el árbol usando ```tree.plot_tree(modelBank2)```
+
+Podemos predecir en base a este ejercicio usando 
+```py
+predict2 = dtc2.predict(test_x_dummies)
+predict2
+```
+
