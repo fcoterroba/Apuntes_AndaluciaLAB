@@ -96,3 +96,4 @@ predict2 = dtc2.predict(test_x_dummies)
 predict2
 ```
 
+# 18/12/2020
